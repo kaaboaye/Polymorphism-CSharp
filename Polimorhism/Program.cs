@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Polimorhism.Shapes;
 
 namespace Polimorhism
 {
@@ -10,6 +11,18 @@ namespace Polimorhism
     {
         static void Main(string[] args)
         {
+            var Figury = new List<Shape>
+            {
+                new Square("Kwadrat ABCD", 4d),
+                new Circle("Fajny okrąg", 3d),
+            };
+
+            foreach (Shape Figura in Figury)
+            {
+                Figura.PrintInfo();
+            }
+
+            Console.ReadLine();
         }
     }
 }
