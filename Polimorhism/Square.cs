@@ -36,6 +36,7 @@ namespace Polimorhism.Shapes
         public override void PrintInfo()
         {
             base.PrintInfo();
+            Console.WriteLine($"Bok: {side}");
             Console.WriteLine($"Przekątna: {Diagonal}");
         }
     }
